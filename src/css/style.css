@@ -1,0 +1,56 @@
+.ant-select-selector {
+    padding: 10px !important;
+}
+
+.ant-tabs-tab-active {
+    font-weight: bold;
+}
+
+.ant-tabs-tab {
+    font-weight: 500;
+    color: gray;
+}
+
+.ant-tabs-tab-active ant-tabs-tab-btn {
+    font-weight: bold;
+    border-bottom: 1px solid orange !important;
+    color: white;
+}
+
+/* #rc-tabs-1-tab-2{
+    color: white !important;
+} */
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: black;
+}
+
+.ant-drawer-header-title {
+    flex-direction: row-reverse;
+}
+
+.ant-drawer-header {
+    padding: 16px 10px !important;
+}
+
+.recruiter-tabs .ant-tabs-nav-list {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+/* details.recruiter-details summary::-webkit-details-marker {
+    display: none;
+} */
+
+/* details.recruiter-details>summary:before {
+    content: '▼ ';
+} */
+/* 
+details.recruiter-details[open] > summary span{
+    display: none;
+}
+
+details.recruiter-details{
+    display: flex !important;
+} */
