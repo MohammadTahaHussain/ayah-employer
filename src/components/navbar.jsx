@@ -131,7 +131,7 @@ const App = ({ active, children, navShow }) => {
 
                     <div className="h-[15vh] bg-white shadow-xl absolute bottom-0 w-[286px] max-w-[286px]">
                         <div className="w-full h-full flex justify-center items-center">
-                            <button className="uppercase px-3 border border-[#47d0e6] py-2 rounded-full" onClick={() => setModal1Open(true)}>
+                            <button className="uppercase px-3 border border-[#47d0e6] py-2 rounded-full">
                                 My employes
                             </button>
                         </div>
@@ -143,10 +143,7 @@ const App = ({ active, children, navShow }) => {
                     {children}
                 </div>
             </div >
-            {/* <Button type="primary" onClick={() => setModal2Open(true)}>
-                Vertically centered modal dialog
-            </Button > */}
-            <Modal
+            {/* <Modal
                 title="Recommend your recruiter"
                 centered
                 open={modal1Open}
@@ -163,7 +160,7 @@ const App = ({ active, children, navShow }) => {
                         <Tabs defaultActiveKey="1" items={tabItems} className="w-full pl-4" />
                     </div>
                 </div>
-            </Modal>
+            </Modal> */}
         </>
 
     )
