@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import * as Yup from "yup"
 import { FaFileContract } from "react-icons/fa"
 import { FaUsers } from "react-icons/fa"
+import { RiFileUserLine } from "react-icons/ri"
 
 const App = ({ active, children, navShow }) => {
     const [modal1Open, setModal1Open] = useState(false);
@@ -118,12 +119,20 @@ const App = ({ active, children, navShow }) => {
                                 Shortlisted candidates
                             </Link>
                         </div>
+                        <div className={`flex items-center gap-x-3 ${active == "information" && "border-l-4"} ${active !== "information" && "pl-1"} border-myOrange h-12`}>
+                            <div>
+                                <RiFileUserLine className={`${active == "information" && "text-myOrange"} text-xl`} />
+                            </div>
+                            <Link to={"/jobs/candidates/info"}>
+                                Candidates Information
+                            </Link>
+                        </div>
                     </div>
 
                     <div className="h-[15vh] bg-white shadow-xl absolute bottom-0 w-[286px] max-w-[286px]">
                         <div className="w-full h-full flex justify-center items-center">
                             <button className="uppercase px-3 border border-[#47d0e6] py-2 rounded-full" onClick={() => setModal1Open(true)}>
-                                recommend my recruiter
+                                My employes
                             </button>
                         </div>
                     </div>
